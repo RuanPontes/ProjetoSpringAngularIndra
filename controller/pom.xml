@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<parent>
 		<groupId>com.indracompany</groupId>
 		<artifactId>treinamento</artifactId>
@@ -27,20 +27,20 @@
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		
-		
+
+
 		<dependency>
 			<groupId>com.indracompany</groupId>
 			<artifactId>treinamento-model</artifactId>
 			<version>1.0</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.primefaces</groupId>
 			<artifactId>primefaces</artifactId>
 			<version>8.0</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.primefaces.extensions</groupId>
 			<artifactId>primefaces-extensions</artifactId>
@@ -147,7 +147,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>

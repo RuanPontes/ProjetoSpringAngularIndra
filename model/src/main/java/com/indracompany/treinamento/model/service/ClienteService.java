@@ -38,5 +38,14 @@ public class ClienteService extends GenericCrudService<Cliente, Long, ClienteRep
 		return cli;
 
 	}
+	public Cliente buscarClientePorEmail(String email) {
+
+		Cliente cli = clienteRepository.findByEmail(email);
+		if (cli == null) {
+			throw new AplicacaoException(ExceptionValidacoes.ALERTA_NENHUM_REGISTRO_ENCONTRADO, email);
+		}
+		return cli;
+
+	}
 
 }
